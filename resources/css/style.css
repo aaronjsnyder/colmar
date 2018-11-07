@@ -1,0 +1,151 @@
+html {
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  padding-right: 2rem;
+}
+
+/* Header Styling */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 0 .75rem;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+header nav li {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+/* CTA Banner Styling */
+
+.cta-banner {
+  display: flex;
+  align-items: center;
+}
+
+.cta-banner img {
+  width: 60%;
+  height: auto;
+}
+
+.cta {
+  padding-left: 1.5rem;
+  width: 20rem;
+}
+
+.button {
+  background-color: darkgrey;
+  text-align: center;
+  padding: .5rem 0;
+}
+
+/* Info Section Styling */
+
+.info {
+  display: flex;
+}
+
+article.main {
+  width: 60%;
+  margin-right: 1.5rem;
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+}
+
+div.supporting {
+  width: 35%;
+}
+
+article.supporting {
+  display: flex;
+  align-items: center;
+}
+
+article.supporting img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+/* Course Section Styling */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses .articles {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 3rem 0 3rem;
+}
+
+.course {
+  width: 30%;
+  margin-right: 2rem;
+}
+
+.course .content {
+  padding: 1rem 0 1.5rem 1rem;
+}
+
+.course .content span {
+  display: inline-block;
+  margin: .5rem 0;
+}
+
+/* Thesis Section Styling */
+
+.thesis .articles{
+  display: flex;
+}
+
+video {
+  max-width: 100%;
+}
