@@ -10,31 +10,37 @@
 
 <!--Header-->
     <header>
-      <div class="logo">
+      <div class="logo desktop">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy lion logo">
-        <span><strong>Colmar</strong>Academy</span>
+        <span><strong>COLMAR</strong>ACADEMY</span>
       </div>
       <nav>
-        <ul>
+        <ul class="desktop" role="presentation">
           <li><span>On campus</span></li>
           <li><span>Online</span></li>
           <li><span>For companies</span></li>
-          <li><span>Sign in</span></li>
+          <li class="desktop" ><span>Sign in</span></li>
+        </ul>
+        <ul class="mobile" role="presentation">
+          <li><img src="./resources/images/ic-logo.svg" alt="Colmar Academy lion logo"></li>
+          <li><img src="./resources/images/ic-on-campus.svg" alt="desk icon"></li>
+          <li><img src="./resources/images/ic-online.svg" alt="computer monitor icon"></li>
+          <li><img src="./resources/images/ic-login.svg" alt="person icon"></li>
         </ul>
       </nav>
     </header>
 
-    <div class="main-content">
+    <main>
 
 
 <!--CTA Section-->
 
       <section class="cta-banner">
         <img src="./resources/images/banner.jpg" alt="3 students studying at a picnic table">
-        <div class="cta">
+        <div class="cta" role="presentation">
           <h1>Learn something new everyday</h1>
           <h2>Lorum ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-          <div class="button">
+          <div class="button" role="button">
             <span><a href="#">Start here</a></span>
           </div>
         </div>
@@ -44,42 +50,48 @@
 <!--Info Section-->
 
       <section class="info">
-        <article class="main">
+        <article class="main desktop">
           <img src="./resources/images/information-main.jpg" alt="man reading a book outdoors">
-          <h1>It doesn't hurt to keep practicing.</h1>
-          <p>Lacus luctus accumsan tortor posuere. Convallis posuere morbi leo urna.
-                Ac turpis egestas sed tempus urna et pharetra pharetra massa.
-                Pharetra diam sit amet nisl.</p>
-          <span class="attribution">Emanuel, Sr Strategist at Hiring.com</span>
+          <div class="content" role="presentation">
+            <h1>It doesn't hurt to keep practicing</h1>
+            <p>Lacus luctus accumsan tortor posuere. Convallis posuere morbi leo urna.
+                  Ac turpis egestas sed tempus urna et pharetra pharetra massa.
+                  Pharetra diam sit amet nisl.</p>
+            <span aria-label="Authored by">Emanuel, Sr Strategist at Hiring.com</span>
+          </div>
         </article>
 
-        <div class="supporting">
+        <div class="supporting" role="presentation">
 
           <article class="supporting">
-            <img src="./resources/images/information-orientation.jpg" alt="people walking on a
+            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="people walking on a
             brick road casting large shadows">
-            <div class="content">
+            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="people walking on a
+            brick road casting large shadows">
+            <div class="content" role="presentation">
               <h2>Orientation date</h2>
               <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
-              <a href="#">Read more</a>
+              <span><a href="#">Read more</a></span>
             </div>
           </article>
 
           <article class="supporting">
-            <img src="./resources/images/information-campus.jpg" alt="people studying in a hip cafe">
-            <div class="content">
+            <img class="desktop" src="./resources/images/information-campus.jpg" alt="people studying in a hip cafe">
+            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="people studying in a hip cafe">
+            <div class="content" role="presentation">
               <h2>Our campus</h2>
               <span>Find which campus is close by you</span>
-              <a href="#">Read more</a>
+              <span><a href="#">Read more</a></span>
             </div>
           </article>
 
           <article class="supporting">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
-            <div class="content">
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
+            <div class="content" role="presentation">
               <h2>Our guest lecture</h2>
               <span>Join Oliver Sack for a keynote about music in medical treatment</span>
-              <a href="#">Read more</a>
+              <span><a href="#">Read more</a></span>
             </div>
           </article>
         </div>
@@ -92,58 +104,58 @@
 
         <h1>Start learning</h1>
 
-        <div class="articles">
+        <div class="articles" role="presentation">
           <article class="course">
-            <img src="./resources/images/course-software.jpg" alt="2 side by side computer monitors">
-            <div class="content">
+            <img class="desktop" src="./resources/images/course-software.jpg" alt="2 side by side computer monitors">
+            <div class="content" role="presentation">
               <h2>Software engineering</h2>
-              <span>Courses</span>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+              <span class="desktop">COURSES</span>
+              <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
             </div>
           </article>
 
           <article class="course">
-            <img src="./resources/images/course-computer-art.jpg" alt="a hand holding an iPhone">
-            <div class="content">
+            <img class="desktop" src="./resources/images/course-computer-art.jpg" alt="a hand holding an iPhone">
+            <div class="content" role="presentation">
               <h2>Computer art</h2>
-              <span>Courses</span>
-              <p>Images & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+              <span class="desktop">COURSES</span>
+              <p class="desktop">Images & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
             </div>
           </article>
 
           <article class="course">
-            <img src="./resources/images/course-design.jpg" alt="man holding a fancy camera">
-            <div class="content">
+            <img class="desktop" src="./resources/images/course-design.jpg" alt="man holding a fancy camera">
+            <div class="content" role="presentation">
               <h2>Design</h2>
-              <span>Courses</span>
-              <p>User Experience Design, User Research, Visual Design</p>
+              <span class="desktop">COURSES</span>
+              <p class="desktop">User Experience Design, User Research, Visual Design</p>
             </div>
           </article>
 
           <article class="course">
-            <img src="./resources/images/course-data.jpg" alt="laptop displaying a data driven graph">
-            <div class="content">
+            <img class="desktop" src="./resources/images/course-data.jpg" alt="laptop displaying a data driven graph">
+            <div class="content" role="presentation">
               <h2>Data</h2>
-              <span>Courses</span>
-              <p>Data Science, Big Data, SQL, Data Visualization</p>
+              <span class="desktop">COURSES</span>
+              <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
             </div>
           </article>
 
           <article class="course">
-            <img src="./resources/images/course-business.jpg" alt="a chessboard">
-            <div class="">
+            <img class="desktop" src="./resources/images/course-business.jpg" alt="a chessboard">
+            <div class="content" role="presentation">
               <h2>Business</h2>
-              <span>Courses</span>
-              <p>Product Development, Business Development, Startup</p>
+              <span class="desktop">COURSES</span>
+              <p class="desktop">Product Development, Business Development, Startup</p>
             </div>
           </article>
 
           <article class="course">
-            <img src="./resources/images/course-marketing.jpg" alt="hands checking an Apple watch">
-            <div class="content">
+            <img class="desktop" src="./resources/images/course-marketing.jpg" alt="hands checking an Apple watch">
+            <div class="content" role="presentation">
               <h2>Marketing</h2>
-              <span>Courses</span>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
+              <span class="desktop">COURSES</span>
+              <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
             </div>
           </article>
         </div>
@@ -156,22 +168,24 @@
 
         <h1>Thesis exhibit</h1>
 
-        <div class="articles">
+        <div class="articles" role="presentation">
           <article class="main">
-            <video src="./resources/videos/thesis.mp4">
-
+            <video src="./resources/videos/thesis.mp4" controls>
+              Video not supported.
             </video>
-            <h2>Reimagine urban</h2>
-            <p>Ut porttitor leo a diam sollicitudin.
-                  In massa tempor nec feugiat nisl pretium fusce id velit.
-                  Phasellus faucibus scelerisque eleifend donec.
-                  Elementum curabitur vitae nunc sed velit dignissim sodales ut.</p>
+            <div class="desktop content" role ="presentation">
+              <h2>Reimagine urban</h2>
+              <p>Ut porttitor leo a diam sollicitudin.
+                    In massa tempor nec feugiat nisl pretium fusce id velit.
+                    Phasellus faucibus scelerisque eleifend donec.
+                    Elementum curabitur vitae nunc sed velit dignissim sodales ut.</p>
+            </div>
           </article>
 
-          <div class="supporting">
+          <div class="supporting desktop" role="presentation">
             <article class="supporting">
               <img src="./resources/images/thesis-fisma.jpg" alt="a hand taking notes from an iPhone">
-              <div class="content">
+              <div class="content" role="presentation">
                 <h2>Fisma: Design and Prototype</h2>
                 <span>Designer showcase of a new prototype product</span>
               </div>
@@ -179,7 +193,7 @@
 
             <article class="supporting">
               <img src="./resources/images/thesis-now-and-then.jpg" alt="skyscrapers">
-              <div class="content">
+              <div class="content" role="presentation">
                 <h2>Now and Then</h2>
                 <span>Research study about New York</span>
               </div>
@@ -189,18 +203,18 @@
       </section>
 
 
+
 <!--footer-->
 
-      <footer>
-        <span>&copy2016 Colmar Academy. All rights reserved</span>
-        <nav>
-          <ul>
-            <li>Terms</li>
-            <li>Privacy</li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
-
+     <footer>
+       <span>&copy2016 Colmar Academy. All rights reserved</span>
+       <nav class="desktop">
+         <ul role="presentation">
+           <li>Terms</li>
+           <li>Privacy</li>
+         </ul>
+       </nav>
+     </footer>
+    </main>
   </body>
 </html>
